@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+
+{% for value in data %}
+<div align="center">{{ value.title }}.{{ value.content }}.{{ value.createtime|date('Y-m-d H:i:s') }}.<a onclick="return confirm('确定要删除吗？')" href="/index/del/id/{{ value.id }}" >删除</a></div><br>
+{% endfor %}
+
+{% endblock %}
+

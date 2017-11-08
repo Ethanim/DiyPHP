@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/index/save" method="post">
+	<div align="center">标题：<input type="text" name="title" ></div>
+	<br>	
+	<div align="center">内容：<textarea name="content" id="" cols="30" rows="10"></textarea>
+	<br>	
+	<div align=""><input type="submit" value="提交"></div>
+	
+</form>
+{% endblock %}

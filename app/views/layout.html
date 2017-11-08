@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		a:link , a:visited{color:#444;text-decoration:none;}
+		a:hover{color:red;}
+	</style>
+</head>
+<body>
+	<header>
+		<h2 align="center">超级简单留言板</h2>
+		<div align="center">
+			<a href="/">所有留言</a>
+			<a href="/index/add">添加留言</a>
+		</div>
+	</header>
+		<content>
+			<br>
+			{% block content %}
+			{% endblock %}
+		</content>
+	<footer>
+		<h2 align="center">DiyPHP框架事例</h2>
+	</footer>
+</body>
+</html>
