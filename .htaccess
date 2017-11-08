@@ -1,0 +1,12 @@
+
+#开启重写开关
+RewriteEngine on
+
+# 访问的不是一个文件file
+RewriteCond %{REQUEST_FILENAME} !-f
+# 访问的不是一个目录directory
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#(.*)代表请求的时候后续给传递的内容
+# $1代表前边小阔内容，这是正则表达式中模式单元重复使用的用法
+RewriteRule ^(.*)$  index\.php/$1
